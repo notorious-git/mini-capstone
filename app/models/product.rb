@@ -26,4 +26,13 @@ class Product < ApplicationRecord
   def total
     price + tax
   end
+
+  def image_url_list
+    # list = []
+    # images.each do |image|
+    #   list << image.url
+    # end
+    # list
+    images.map { |image| image.url }
+  end
 end
