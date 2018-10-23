@@ -5,6 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+supplier = Supplier.new(name: "Amazon", email: "amazon@email.com", phone_number: "234234324")
+supplier.save
+
+supplier = Supplier.new(name: "ThinkGeek", email: "thinkgeek@email.com", phone_number: "134234324")
+supplier.save
+
 product = Product.new({name: "WNYX Mug", price: 2, description: "Get your morning news once you wake up with a cup of joe from... well Joe. He made it with his homemade duct tape", image_url: "https://i.pinimg.com/236x/14/4a/0b/144a0bffe37f29f414e2dae2bd0141cf.jpg"})
 product.save
 
