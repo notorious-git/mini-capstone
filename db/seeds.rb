@@ -30,3 +30,17 @@ Image.create!(product_id: 6, url: "https://dyn0.media.forbiddenplanet.com/produc
 Image.create!(product_id: 7, url: "https://staticdelivery.nexusmods.com/mods/1151/images/12353-0-1461721930.png")
 
 Order.create!(user_id: 1, product_id: 2, quantity: 10, subtotal: 420, tax: 37.80, total: 457.80)
+
+Category.create!(name: "Weapon")
+Category.create!(name: "Appliance")
+Category.create!(name: "Leisure")
+
+CategoryProduct.create!(product_id: 1, category_id: 2)
+CategoryProduct.create!(product_id: 2, category_id: 3)
+CategoryProduct.create!(product_id: 3, category_id: 1)
+CategoryProduct.create!(product_id: 3, category_id: 2)
+CategoryProduct.create!(product_id: 4, category_id: 1)
+CategoryProduct.create!(product_id: 5, category_id: 3)
+CategoryProduct.create!(product_id: 6, category_id: 1)
+CategoryProduct.create!(product_id: 6, category_id: 2)
+CategoryProduct.create!(product_id: 7, category_id: 3)
